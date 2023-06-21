@@ -1,4 +1,6 @@
 FROM centos:latest
+RUN sudo yum repolist
+RUN sudo yum config-manager --disable appstream
 RUN yum install -y httpd \
   zip \
  unzip 
