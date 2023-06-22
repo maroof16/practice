@@ -8,7 +8,7 @@ RUN apt-get update
 RUN apt-get install -y apache2
 
 # Copy the yogast-html files to the Apache web root directory
-COPY yogast-html/ /var/www/html/
+COPY ./ /var/www/html/
 
 # Expose port 80 for the Apache web server
 EXPOSE 80
