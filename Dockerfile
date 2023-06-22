@@ -11,7 +11,7 @@ RUN apt-get install -y apache2
 COPY ./ /var/www/html/
 
 # Expose port 80 for the Apache web server
-EXPOSE 80
+EXPOSE 80 
 
 # Start the Apache web server in the foreground
 CMD ["apache2ctl", "-D", "FOREGROUND"]
